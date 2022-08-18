@@ -5,7 +5,23 @@
 
 int main()
 {
-    std::cout << "Hello World!\n";
+	int a;
+	
+	switch (a)
+	{
+	case 1:
+		std::cout << "Hello World!\n";
+		break;
+	case 1:
+		std::cout << "Hello World!\n";
+		break;
+	case 1:
+		std::cout << "Hello World!\n";
+		break;
+	default:
+		break;
+	}
+	std::cout << "Hello World!\n";
 }
 
 // Run program: Ctrl + F5 or Debug > Start Without Debugging menu
