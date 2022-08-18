@@ -2,26 +2,40 @@
 //
 
 #include <iostream>
+using namespace std;
 
 int main()
 {
-	int a;
+	int a=0, b=0;
+	int oper = 0;
 	
-	switch (a)
+	cout << "Enter two numbers: ";
+	cin >> a >> b;
+
+	cout << "select 1 for sum : " << endl;
+	cout << "select 2 for dif : " << endl;
+	cout << "select 3 for mult: " << endl;
+	cout << "select 4 for div : " << endl;
+	cin >> oper;
+
+	switch (oper)
 	{
 	case 1:
-		std::cout << "Hello World!\n";
+		cout << a << " + " << b << " = " << a + b;
 		break;
-	case 1:
-		std::cout << "Hello World!\n";
+	case 2:
+		cout << a << " - " << b << " = " << a - b;
 		break;
-	case 1:
-		std::cout << "Hello World!\n";
+	case 3:
+		cout << a << " * " << b << " = " << a * b;
+		break;
+	case 4:
+		cout << a << " / " << b << " = " << a / b;
 		break;
 	default:
+		cout << "Exit:";
 		break;
 	}
-	std::cout << "Hello World!\n";
 }
 
 // Run program: Ctrl + F5 or Debug > Start Without Debugging menu
